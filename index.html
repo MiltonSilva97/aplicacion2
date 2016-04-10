@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.iconos-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ramos1.png','imagenes/lunes.png','imagenes/semana santa.png','imagenes/saba.png','imagenes/resureccion.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+      <h1>Semana Santa </h1>
+   </div>
+     <div>
+     <center>
+      <img src="imagenes/semana santa1.png" width="50%" height="50%">
+      </center>
+      </div>  
+
+<div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>El significado de la semana santa</h2> 
+     </a>
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Domingo de Pascuas</h2>
+     </a> 
+   </li>
+      <li class="ui first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Como se establece la semana santa</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebracion en atlixco</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Iztapalapa</h2>
+     </a> 
+   </li>
+    <li class="ui first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Vaticano</h2>
+     </a> 
+   </li>
+    <li class="ui first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebracion en jurusalen</h2>
+     </a> 
+   </li>
+    <li class="ui first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebracion en Europa</h2>
+
+     </a> 
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+     <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Milton Silva Axilote</h4>
+   </div>
+</div>
+</div>       
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>SIGNIFICADO</h1>
+   </div>
+   
+  <div data-role="content" align="center">
+ 
+     <h2>La Semana Santa es la conmemoración anual cristiana de  la Pasión, Muerte y Resurrección de Jesús de Nazaret </h2>
+     
+      <div data-role="collapsible" data-content-theme="false">
+     <h2>mas..........</h2>
+        <img src="imagenes/descarga.png" width="50%" height="50%">
+   
+     <h2>Da comienzo el domingo de ramos y finaliza el domingo de resurrección</h2>
+   
+     <img src="imagenes/DomingoRamos.png" width="50%" height="50%">
+   
+     <h2>su celebración suele iniciarse en varios lugares el viernes anterior  se considera parte de la misma el domingo de resurrección</h2>
+   
+     <img src="imagenes/viernes.png" width="50%" height="50%">
+   
+     <h2>La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección</h2>
+   
+     <img src="imagenes/dias de la semana santa.png" width="50%" height="50%">
+   
+     <h2>Durante la Semana Santa tienen lugar numerosas muestras de religiosidad popular a lo largo de todo el mundo, destacando las procesiones y las representaciones de la Pasión</h2>
+   
+     <img src="imagenes/reprecentacion.png" width="50%" height="50%">
+   </div>
+ </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Silva Axilote Milton</h4>
+</div> 
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>DOMINGO DE PASCUAS</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    
+     <div data-role="collapsible" data-content-theme="false">
+    <h2>¿Que es........?
+    
+      <h2>Pascua es la celebración más importante de la Iglesia Cristiana, donde se conmemora la Resurrección de Jesucristo al tercer día después de haber sido crucificado La Pascua forma parte de la Semana Santa donde en el "Viernes Santo" se celebra la crucifixión de Jesús, y en el Domingo de Pascua se celebra la Resurrección y su primera aparición a sus discípulos</h2>
+     
+     <img src="imagenes/aparicion.png" width="50%" height="50%">
+   </div> 
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a">
+      <h4>Silva Axilote Milton</h4>
+    </div>
+</div>     
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>SEMANA SANTA</h1>
+  </div>
+  
+  <div data-role="content" align="center">
+  
+  <div data-role="collapsible" data-content-theme="false">
+  
+  <h2>Como se establece</h2>
+    
+      <h2>Período de siete días que según el calendario civil empieza el lunes y termina el domingo y según el calendario litúrgico, empieza el domingo y termina el sábado Semana Santa  Última semana de la cuaresma  desde el Domingo de Ramos hasta el Domingo de Resurrección, que la iglesia católica dedica a recordar la pasión  muerte y resurrección de Jesús</h2>
+     
+     <img src="imagenes/fechas.png" width="50%" height="50%">
+   </div> 
+    </div>
+   <div data-role="footer" data-theme="a">
+     <h4>SILVA AXILOTE MILTON</h4>
+   </div>
+  </div>
+</div>   
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+    <h1>Celebracion en atlixco</h1>
+  </div>
+  <div data-role="content" align="center">
+  
+  <div data-role="collapsible" data-content-theme="false">
+  
+  <h2>Atlixco</h2>
+  
+      <h1>La Semana Santa es el momento litúrgico más intenso de todo el año. Sin embargo, para muchos católicos se ha convertido sólo en una ocasión de descanso y diversión. Se olvidan de lo esencial: esta semana la debemos dedicar a la oración y la reflexión en los misterios de la Pasión y Muerte de Jesús para aprovechar todas las gracias que esto nos trae</h1>
+      <h2>DOMINGO DE RAMOS Se celebra la entrada triunfal de Jesús en Jerusalén. Es un anticipo de la Pascua </h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/ramos1.png',1)"><img src="imagenes/semana santa1.png" width="50%" height="50%" id="Image25"></a>
+     
+     
+     <h2>LUNES SANTO, MARTES SANTO ,MIÉRCOLES SANTO ,JUEVES SANTO</h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/lunes.png',1)"><img src="imagenes/semana santa1.png" width="50%" height="50%" id="Image26"></a>
+     
+     <h2>VIERNES SANTO Este día constituye el núcleo central de la Semana Santa. Es el día delmáximo dolor y de la muerte de Jesús</h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/semana santa.png',1)"><img src="imagenes/semana santa1.png" width="50%" height="50%" id="Image27"></a>
+      
+      
+      <h2>SÁBADO SANTO Es día de luto por la muerte del Salvador Este dia es mas conocido como sabado de gloria</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/saba.png',1)"><img src="imagenes/semana santa1.png" width="50%" height="50%" id="Image28"></a>
+  
+     
+    
+      <h2>DOMINGO DE PASCUA DE RESURRECCIÓN La alegría por la resureccion jesu cristo</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/resureccion.png',1)"><img src="imagenes/semana santa1.png" width="50%" height="50%" id="Image29"></a>
+     
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>SILVA AXILOTE MILTON</h4>
+   </div>
+  </div>      
+</div>  
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>IZTAPALAPA</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.</h2></div>
+       <img src="imagenes/izta.png" width="50%" height="50%">
+     </div>
+     
+     <div>
+      <center>
+      <h2>Se lleva acabo el recorrido del cuerpo de Cristo hacia la Macroplaza donde será su Santo Sepulcro</h2>
+      <img src="imagenes/izta1.png" width="50%" height="50%">
+      </center>
+     </div> 
+     
+      <div>
+      <center>
+      <h2>Muere Cristo en la cruz. Clavan una lanza en su costado de donde brota sangre</h2>
+      <img src="imagenes/izta2.png" width="50%" height="50%">
+      </center>
+     </div> 
+     
+   <div data-role="footer" data-theme="a">
+      <h4>SILVAAXILOTE MILTON</h4>     
+   </div>  
+  </div>
+</div>  
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Celebracion en el vatacano</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>En el Vaticano El papa argentino presidirá el domingo la tradicional celebración del domingo de ramos, con la que se inicia la Semana Santa, el tiempo litúrgico más importante para los católicos</h2></div>
+       <img src="imagenes/vati.png" width="50%" height="50%">
+     </div>
+     
+       <div>
+       <center>
+      <h2>CIUDAD DEL VATICANO El tradicional Vía Crucis en el Coliseo romano del Viernes Santo y la bendición </h2>
+      <img src="imagenes/vati1.png" width="50%" height="50%">
+       </center>
+     </div>
+     
+      <div>
+       <center>
+      <h2>El ciclo concluirá el domingo, fiesta de Pascua con la misa del día presidida por el Papa a las 10 locales en plaza san Pedro Luego  desde la logia central de la basílica  pronunciará el mensaje pascual e imparte la bendición  a la ciudad y al mundo </h2>
+      <img src="imagenes/vati2.png" width="50%" height="50%">
+       </center>
+     </div>
+     
+       <div>
+      <center>
+      <h2>Muere Cristo en la cruz. Clavan una lanza en su costado de donde brota sangre</h2>
+      </center>
+     </div> 
+     
+   <div data-role="footer" data-theme="a">
+      <h4>SILVA AXILOTE MILTON</h4>     
+   </div>   
+  </div>
+</div>
+  
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>JERUSALEN</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>Los dias mas significativos son Jueves y Viernes Santos
+Los momentos más emotivos y llamativos se dan el Jueves Santo día en que los cristianos recuerdan la Última Cena de Cristo en la que instauró el sacramento de la Eucaristía y tras la cual fue traicionado por Judas</h2></div>
+       <img src="imagenes/jeru.png" width="50%" height="50%">
+     </div>
+     
+       <div>
+      <center>
+      <h2>•	El Viernes Santo el día en que  Jesús fue crucificado y enterrado se lleva a cabo una procesión de miles de cruces, la cual es encabezada por el Patriarca la Custodia de los Lugares Santos y otros grupos independientes  deteniéndose en cada estación a lo largo de la Vía Dolorosa en la Ciudad Vieja de Jerusalem  y dirigiéndose al Calvario en la Iglesia del Santo Sepulcro</h2>
+      <img src="imagenes/jeru2.png" width="50%" height="50%">
+      </center>
+     </div> 
+     
+       <div>
+      <center>
+      <h2>El Sábado de Gloria los cristianos ortodoxos celebran la Ceremonia del Fuego Santo la cual reúne a miles de feligreses dentro y fuera de la Iglesia del Santo Sepulcro para esperar el milagroso encendido de la vela del Patriarca desde dentro de la tumba Esta ceremonia espectacular es única y muy particular en Jerusalem y es transmitida en todo el mundo Además la luz es traída desde países ortodoxos en un vuelo especial</h2>
+      <img src="imagenes/jeru1.png" width="50%" height="50%">
+      </center>
+     </div> 
+     
+   <div data-role="footer" data-theme="a">
+      <h4>SILVA AXILOTE MILTON</h4>     
+   </div> 
+     
+  </div>
+</div> 
+ 
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Semana santa en Europa</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>Semana Santa llega junto con la primavera en Europa y muchos creyentes o no consideran que es un símbolo de la nueva vida  Para los cristianos la representación de la resurrección de Cristo tras su crucifixión es simbolizada cuando comienzan a florecer los árboles y las flores
+Pero la fiesta de la primavera en Europa se lleva practicando durante muchos siglos, incluso antes de la llegada del cristianismo Es más se cree que la palabra en inglés “o Pascua Florida se debe a la diosa pagana germánica que representa la primavera y la fertilidad  cuyos símbolos eran la liebre y el huevo  De allí salen los conejos y los huevos de Pascua Cada país celebra su primavera y Semana Santa de distinta manera
+</h2></div>
+       <img src="imagenes/euro.png" width="50%" height="50%">
+     </div>
+   <div data-role="footer" data-theme="a">
+      <h4>SILVA AXILOTE MILTON</h4>     
+   </div>   
+  </div>
+</div>  
+</body>
+</html>
